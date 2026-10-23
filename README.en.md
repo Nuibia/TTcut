@@ -1,140 +1,94 @@
-# TTcut
+<p align="center"><img src="public/ttcut-icon.png" alt="TTcut" width="88"></p>
 
-<p align="center"><img src="public/ttcut-icon.png" alt="TTcut icon" width="160"></p>
+<h1 align="center">TTcut</h1>
 
-[简体中文](README.md) | **English**
+<p align="center">Capture every shot. Leave the rest to TTcut.</p>
 
-TTcut is a local automatic table-tennis video cutter for players and enthusiasts. It locates the ball, organizes valid rallies with the selected recognition method, then exports edited clips using the selected cutting mode.
+<p align="center"><a href="README.md">简体中文</a> · <a href="README.zh-Hant.md">繁體中文</a> · <strong>English</strong></p>
 
-Videos, analysis results, and history stay on the local computer. TTcut requires no account, uploads no video, and collects no telemetry. An internet connection is required when installing the resources needed for the first run; analysis, preview, and cutting can run offline after setup.
+<p align="center">
+  <a href="https://github.com/WeiyePlayer/TTcut/releases/latest">Download for Windows / macOS</a> ·
+  <a href="https://github.com/WeiyePlayer/TTcut-Mobile-Releases/releases">Android</a> ·
+  <a href="https://apps.apple.com/us/app/pingduo/id6818115664">iPhone / iPad</a>
+</p>
 
-> The current stable release is `v1.3.2` for Windows x64.
+![TTcut custom editor with a rally list, video preview, scoreboard and timeline](docs/images/readme/desktop-editor-en.png)
 
-## Download and installation
+<p align="center"><sub>Actual desktop app screenshot with illustrative video footage.</sub></p>
 
-1. Download the Windows version from [TTcut Releases](https://github.com/WeiyePlayer/TTcut/releases). The full installer is for a one-step setup; the online installer downloads and verifies the required runtime resources during installation and needs an active connection.
-2. Download the Android version from [TTcut-Mobile-Releases](https://github.com/WeiyePlayer/TTcut-Mobile-Releases/releases).
-3. If GitHub downloads are slow, use the Baidu Netdisk mirror: [link](https://pan.baidu.com/s/1LXDzs74xOM1t50-IRM_Vvw?pwd=ttct), extraction code: `ttct`.
-4. Run the installer, choose the installation root, and decide whether to create a desktop shortcut. Application files are written under `<root>\app`; large runtime resources, downloads, and import staging are stored under `<root>\data\components`. A Start menu shortcut is always created.
-5. On first launch, open Settings, review the prompts, and install the required runtime resources.
+## From a full match to your best moments
 
-TTcut detects an NVIDIA GPU automatically and falls back to CPU if accelerated setup or its self-test fails. Its video-processing capability reads media information, cuts and joins segments, and validates exported files.
+TTcut helps table-tennis players edit their match recordings. Import a video, find the rallies, then keep them all, select highlights, or refine individual clips without repeatedly searching through a long recording.
 
-## What's new in v1.3.2
+| What you want to do | How TTcut helps |
+| --- | --- |
+| Organize a match quickly | Detect rallies with automatic table calibration, or adjust the four corners manually. |
+| Keep the highlights | Export every rally or filter by bounce count or duration, depending on the recognition mode. |
+| Refine individual clips | Preview, select, split, add and delete clips in the rally list and timeline. Adjust boundaries, undo and redo. |
+| Add a scoreboard | Set player names, games and points, choose a style and position, and include the scoreboard in your export. |
+| Process several matches | Add multiple videos for batch analysis and cutting, or combine their edited results into one video. |
+| Share or keep editing | Export a combined video, a separate video for each rally, or an editing file you can import into Premiere. |
 
-- Fixed an error that caused the export feature to behave incorrectly.
+**Your videos stay on your computer.** The desktop app requires no account and does not upload videos. Videos and analysis history are stored locally. After installation, analysis, preview and editing work offline. Reopen an analyzed video from History to continue without analyzing it again.
 
-See the [v1.3.2 release notes](docs/release-notes-v1.3.2.en.md) for the complete details.
+## Download and install
 
-## Contact the author on WeChat: m2924931661
+| Device | Download | Which file to choose |
+| --- | --- | --- |
+| Windows x64 | [Download TTcut](https://github.com/WeiyePlayer/TTcut/releases/latest) | Choose the full installer ending in `x64-Setup.exe`. |
+| macOS 15 or later · Apple Silicon | [Download for Mac](https://github.com/WeiyePlayer/TTcut/releases/latest) | The DMG is recommended: open it and drag TTcut into Applications. A ZIP is also available. Intel Macs are not supported. |
+| Android | [Open the Android download page](https://github.com/WeiyePlayer/TTcut-Mobile-Releases/releases) | Download and install the APK following the release instructions. |
+| iPhone / iPad | [Get PingDuo on the App Store](https://apps.apple.com/us/app/pingduo/id6818115664) | Requires iOS / iPadOS 18 or later. See the introduction below. |
 
-Feedback, bug reports, and feature suggestions are welcome.
+The full desktop packages include everything needed to run the app. See the [latest release notes](https://github.com/WeiyePlayer/TTcut/releases/latest) for updates.
 
-## Usage
+<details>
+<summary>Opening TTcut on macOS for the first time</summary>
 
-### 1. Select a video and calibrate the table
+The current Mac build is not notarized, so macOS may block its first launch. After confirming that the package came from this repository, you can allow it in System Settings → Privacy & Security. Check the release notes for version-specific installation instructions.
 
-- In Automatic cutting, select or drag in one `.mp4` file.
-- Automatic calibration samples the video and detects the table by default.
-- Switch to manual calibration when adjustment is needed, then select a clear frame on the timeline.
-- Click the four table corners in any order. After all four are marked, drag the numbered points to correct them.
-- Confirm that the points do not overlap or cross the frame boundary and form a sufficiently large convex quadrilateral, then start analysis.
-- During calibration or mode selection, use Back in the top-left title bar to choose another video.
+</details>
 
-![Four-corner table calibration](docs/images/calibration.png)
+## Make a cut in three steps
 
-### 2. Wait for local analysis
+1. **Import a match.** Select or drag in an MP4 / MOV video. Use automatic calibration, or select the four table corners manually when adjustment is needed.
+2. **Choose your rallies.** After analysis, select All rallies, Highlights or Custom. Custom mode lets you preview each clip, adjust its boundaries and add a scoreboard.
+3. **Export your video.** Set how much footage to keep before and after rallies, then start cutting. Play the finished video or open its output folder.
 
-The analysis page reports real processing progress. A running task can be cancelled. When closing TTcut during a task, choose whether to exit, minimize, or keep the task running. If no valid rally is found, recalibrate the table or choose another video.
+For best results, use a steady camera with the entire table visible. You can correct detected rallies manually. Keep the original recording for future edits.
 
-### 3. Choose a cutting mode
+## iPhone and iPad: PingDuo
 
-- **All rallies**: export every valid rally.
-- **Highlights**: filter by the bounce-based count with Bounce events, or by duration tiers with Continuous motion.
-- **Custom**: open the dedicated timeline to select rallies individually, preview each clip, and adjust its start and end boundaries. You can also create or delete rally clips manually and choose combined MP4, independent MP4, or Premiere-importable FCP7 XML output.
+![Capture every shot. Leave the rest to PingDuo.](docs/images/readme/ios-header-en.png)
 
-![Choose a cutting mode](docs/images/cutting-modes.png)
+For editing on your phone or tablet, try **PingDuo (乒乓拍档)**. Pick a recording from Photos to organize rallies, review matches and create highlights on your device.
 
-### 4. Set boundaries and export
+<table>
+  <tr>
+    <td><img src="docs/images/readme/ios-library-en.png" alt="PingDuo Library with match recordings" width="260"></td>
+    <td><img src="docs/images/readme/ios-hero-en.png" alt="PingDuo Hero feed for browsing rallies" width="260"></td>
+    <td><img src="docs/images/readme/ios-basket-en.png" alt="PingDuo highlight collection with reorder and export controls" width="260"></td>
+  </tr>
+</table>
 
-For All rallies and Highlights, choose pre-roll and post-roll durations in Settings. Custom mode lets you adjust each clip's start and end directly on its dedicated timeline before exporting. Custom export can retain the combined MP4 and optionally create one MP4 per rally and a Premiere-importable FCP7 XML. Results are stored beside the source video:
+- **Import and analyze:** Choose videos from Photos for on-device analysis. Ball tracking uses four-corner table calibration; action recognition needs no calibration.
+- **Review rallies:** Swipe through the Hero feed, favorite good shots, exclude unwanted rallies and adjust clip boundaries.
+- **Build highlights:** Collect rallies from several videos, reorder them, preview and export. You can also export all rallies or highlights from a single recording.
+- **Buddies and Time Machine:** Record friends' racket setups and notes, link match videos, and revisit rallies by player or date.
+- **Keep it local:** Videos, analysis results and editing records stay on your device and are not uploaded.
 
-- `match.mp4` becomes `match_ttcut.mp4`.
-- Existing names are preserved; TTcut uses `match_ttcut_2.mp4`, `match_ttcut_3.mp4`, and so on.
-- After export, play the result directly or reveal it in File Explorer.
+Each device includes **5 free successful analyses**; failed or cancelled runs do not count. Membership is available in the app for further analysis. Prices and subscription terms are shown in the App Store purchase sheet. Availability depends on your Apple ID region.
 
-### 5. History
+**[Get PingDuo on the App Store →](https://apps.apple.com/us/app/pingduo/id6818115664)**
 
-Completed analyses are saved locally with a first-frame thumbnail, including analyses that found zero rallies. If the source video has not moved or changed, opening a history entry returns directly to cutting mode without rerunning analysis.
+## Feedback
 
-### 6. Batch tasks
-
-Select multiple MP4 files in Batch tasks. On entry, TTcut automatically calibrates each video in list order; successful items wait in the ready state. A failed item shows “Calibration failed / Calibrate manually” on its cover and opens the reusable four-point calibration page when clicked. Completing calibration returns to the same queue with its state preserved. “Start analysis and cutting” processes ready items only, so items waiting for manual calibration do not block the rest. Outputs are stored beside their source videos.
-
-## Cutting rules
-
-- Raw rallies separated by less than 5 seconds are merged into one cut group; a gap of exactly 5 seconds or more starts a new group.
-- Pre-roll and post-roll settings are applied once per cut group.
-- One additional closing second is retained after the last rally in each group before the selected post-roll is applied, clamped to the source duration.
-- Expanded segments that overlap are merged again to avoid duplicate footage.
-
-## Local analysis
-
-The full installer includes the ball- and table-recognition resources required at runtime; the online installer downloads and verifies them during installation. Local analysis is responsible for:
-
-- automatic or manual table calibration and coordinate mapping;
-- locating the ball and organizing valid rallies with Continuous motion or Bounce events;
-- organizing valid rallies with shared table-region, timing, and rally rules;
-- selecting GPU acceleration or CPU processing according to the local environment.
-
-Runtime resources are installed under `<root>\data\components`. Models shipped with the application are checked against fixed sizes and SHA-256 values before packaging.
-
-## Video processing
-
-Video processing is responsible for:
-
-- validating MP4 rotation, duration, resolution, frame rate, audio/video streams, and keyframes;
-- creating and joining clips according to rally boundaries;
-- using lossless copying at safe boundaries and one accurate re-encode otherwise;
-- preserving resolution, orientation, aspect ratio, and color information while validating duration, audio/video synchronization, and playability.
-
-Regular videos use the default processing configuration. An optional video-processing extension can be installed from Settings when high-resolution re-encoding is required; TTcut falls back to the default configuration if the extension is missing or damaged. Lower-resolution videos are never upscaled.
-
-## Run from source
-
-Requirements: Windows x64, Node.js 22, and npm 10. Install dependencies and start TTcut:
-
-```powershell
-npm install
-npm start
-```
-
-Validation and packaging:
-
-```powershell
-npm run typecheck
-npm test
-python -m pytest worker/tests -q
-npm run test:e2e
-npm run verify:release
-npm run make
-npm run make:official
-```
-
-`npm run make` creates the current version's local unsigned installer and update metadata; it does not change the version or upload a Release. `npm run make:official` applies the official signing and release-verification gates.
-
-Videos, model weights, and runtime resources required by the real end-to-end workflow are not distributed with the repository and must be supplied as verified local files on the test machine. The 125%, 150%, and 200% layout cases provide automated DPI regression coverage on the current machine; they are not cross-version Windows certification. Startup and pre-task checks determine system, architecture, and runtime-resource compatibility. See the [Windows compatibility policy](docs/windows-compatibility.md).
-
-## Known limitations
-
-- The single-video workflow handles one MP4 or MOV at a time; Batch tasks accepts multiple MP4/MOV files and runs a serial “calibrate first, then process” queue with manual recovery for failed items.
-- With Bounce events, the displayed count is a bounce-event proxy, not a ground-truth paddle-hit count. Continuous motion does not display a count.
-- Windows x64 remains the primary build. Removing the Windows build-number gate does not guarantee that older Windows versions, x86 systems, or ARM64 systems can run every required dependency.
-
-More implementation and release documentation is available under [`docs`](docs).
+[Report a problem or suggest a feature](https://github.com/WeiyePlayer/TTcut/issues), or contact the author on WeChat: **m2924931661**. Include your operating system, app version and steps to reproduce the issue.
 
 ## Support the project
 
-If TTcut is useful to you, contributions are appreciated. Thank you for your support.
+If TTcut saves you editing time, consider supporting its continued development on Afdian. Every contribution helps keep the app improving. Thank you!
 
-Afdian: https://ifdian.net/a/weiye
+<p align="center"><a href="https://ifdian.net/a/weiye"><img src="docs/images/readme/support-afdian.svg" alt="Support TTcut on Afdian" width="208" height="48"></a></p>
+
+<p align="center"><a href="https://ifdian.net/a/weiye">Afdian · weiye</a></p>
