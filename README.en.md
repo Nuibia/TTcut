@@ -61,6 +61,8 @@ For best results, use a steady camera with the entire table visible. You can cor
 
 ## iPhone and iPad: PingDuo
 
+![Capture every shot. Leave the rest to PingDuo.](docs/images/readme/ios-header-en.png)
+
 For editing on your phone or tablet, try **PingDuo (乒乓拍档)**. Pick a recording from Photos to organize rallies, review matches and create highlights on your device.
 
 <table>
