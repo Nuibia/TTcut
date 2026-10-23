@@ -2,9 +2,7 @@
 
 <h1 align="center">TTcut</h1>
 
-<p align="center"><strong>把時間留給打球，把剪輯交給 TTcut。</strong></p>
-
-<p align="center">自動整理桌球比賽回合，留下每一個值得重看的好球。</p>
+<p align="center">儘管記錄每一拍，其餘交給TTcut</p>
 
 <p align="center"><a href="README.md">简体中文</a> · <strong>繁體中文</strong> · <a href="README.en.md">English</a></p>
 
@@ -66,11 +64,6 @@ TTcut 是為桌球愛好者打造的影片剪輯工具。匯入比賽影片，�
 想在手機或平板上整理比賽，推薦使用 **乒乓拍檔（PingDuo，商店名稱「乒乓拍档」）**。從照片中選擇影片，即可在裝置上整理回合、重看比賽、製作集錦。
 
 <table>
-  <tr>
-    <th>整理片庫</th>
-    <th>滑動重看</th>
-    <th>製作集錦</th>
-  </tr>
   <tr>
     <td><img src="docs/images/readme/ios-library-zh.png" alt="乒乓拍檔片庫：管理比賽影片" width="260"></td>
     <td><img src="docs/images/readme/ios-hero-zh.png" alt="乒乓拍檔英雄頁：滑動瀏覽回合" width="260"></td>

@@ -2,9 +2,7 @@
 
 <h1 align="center">TTcut</h1>
 
-<p align="center"><strong>More time playing. Less time editing.</strong></p>
-
-<p align="center">Turn long table-tennis recordings into rallies and highlights worth watching again.</p>
+<p align="center">Capture every shot. Leave the rest to TTcut.</p>
 
 <p align="center"><a href="README.md">简体中文</a> · <a href="README.zh-Hant.md">繁體中文</a> · <strong>English</strong></p>
 
@@ -66,11 +64,6 @@ For best results, use a steady camera with the entire table visible. You can cor
 For editing on your phone or tablet, try **PingDuo (乒乓拍档)**. Pick a recording from Photos to organize rallies, review matches and create highlights on your device.
 
 <table>
-  <tr>
-    <th>Organize recordings</th>
-    <th>Swipe through rallies</th>
-    <th>Create highlights</th>
-  </tr>
   <tr>
     <td><img src="docs/images/readme/ios-library-en.png" alt="PingDuo Library with match recordings" width="260"></td>
     <td><img src="docs/images/readme/ios-hero-en.png" alt="PingDuo Hero feed for browsing rallies" width="260"></td>
