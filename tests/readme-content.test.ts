@@ -2,7 +2,7 @@ import { readFile } from 'node:fs/promises';
 import path from 'node:path';
 import { describe, expect, it } from 'vitest';
 
-const readmePaths = ['README.md', 'README.en.md'];
+const readmePaths = ['README.md', 'README.zh-Hant.md', 'README.en.md'];
 const internalImplementationNames = [
   /BlurBall/iu,
   /TrackNet/iu,
